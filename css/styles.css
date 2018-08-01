@@ -1,6 +1,12 @@
 body {
     text-align: center;
-    padding-top: 50px;
+    margin-top: 50px;
+}
+.container{
+    background-color: beige;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #d3d3b6;
 }
 #radios {
     display: inline-block;
@@ -8,12 +14,12 @@ body {
     margin: 0 auto;
 }
 p {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    padding: 10px;
     font-size: 20px;
     border-bottom: 1px solid black;
+}
+h3 {
+    line-height: 2em;
 }
 p:last-child {
     border-bottom: none;
