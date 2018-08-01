@@ -51,13 +51,17 @@ function initialize() {
         index = 0;
         $('#start').hide();
         $('#content').show();
-        showQuestion(index);
+		for(let i = 0; i < questions.length; i++){
+			questions[i].checkedIndex = -1;
+		}       
+		showQuestion(index);
     });
     $('#back-button').on('click',function(){
         if(index != 0){
             showQuestion(--index);
         }
     });
+
 }
 function showQuestion (questionIndex) {
     var question = questions[questionIndex];
