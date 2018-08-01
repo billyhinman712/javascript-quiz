@@ -6,28 +6,30 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
     <title>Science Quiz Boiiiiii</title>
   </head>
   <body>
-    <div>
+    <div class="container">
       <div id="content">
-        <h3>Question</h3>
+        <h3 id='question'>Question</h3>
         <div id="radios">
-          <input type="radio" name="select" id="radio1"><span id="option1"></span><br>
-          <input type="radio" name="select" id="radio2"><span id="option2"></span><br>
-          <input type="radio" name="select" id="radio3"><span id="option3"></span><br>
-          <input type="radio" name="select" id="radio4"><span id="option4"></span><br>
-        </div>
+          <p><input type="radio" data-index="0" name="select" id="radio0"><span id="option0"></span></p>
+          <p><input type="radio" data-index="1" name="select" id="radio1"><span id="option1"></span></p>
+          <p><input type="radio" data-index="2" name="select" id="radio2"><span id="option2"></span></p>
+          <p><input type="radio" data-index="3" name="select" id="radio3"><span id="option3"></span></p>
+        </div><br>
+        <button type="button" id="back-button">Back</button>
         <button type="button" id="next-button">Submit</button>
       </div> 
       <div id="start">
         <h3>Click to Get Started!</h3>
+        <h3 id="finished"></h3>
         <button type="button" id="start-button">Start!</button>
       </div>
     </div>
   </body>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
   <footer>
   </footer>
 </html>
